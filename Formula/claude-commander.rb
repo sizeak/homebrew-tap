@@ -8,7 +8,6 @@ class ClaudeCommander < Formula
 
   depends_on "rust" => :build
 
-  depends_on "git"
   depends_on "tmux"
 
   def install
