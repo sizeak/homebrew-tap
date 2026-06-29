@@ -1,8 +1,8 @@
 class ClaudeCommander < Formula
   desc "High-performance terminal UI for managing Claude coding sessions"
   homepage "https://github.com/sizeak/claude-commander"
-  url "https://github.com/sizeak/claude-commander/archive/refs/tags/v0.21.2.tar.gz"
-  sha256 "7d218a2cdb6d02ac95595cc123c204f1927fcc5340dcab4780126bde6111d312"
+  url "https://github.com/sizeak/claude-commander/archive/refs/tags/v0.22.0.tar.gz"
+  sha256 "4117942a82e4b445ef2b53b70ecd99c018ea68ae2ddd44a7a082a504e26603b3"
   license "MIT"
   head "https://github.com/sizeak/claude-commander.git", branch: "main"
 
