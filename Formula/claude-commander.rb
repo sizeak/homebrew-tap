@@ -11,7 +11,10 @@ class ClaudeCommander < Formula
   depends_on "tmux"
 
   def install
-    system "cargo", "install", *std_cargo_args
+    # The repo root is a virtual manifest (a `[workspace]` with no `[package]`)
+    # as of v0.24.0, so the default `path: "."` no longer resolves. Point at the
+    # crate that actually produces the binary.
+    system "cargo", "install", *std_cargo_args(path: "crates/claude-commander")
   end
 
   test do
